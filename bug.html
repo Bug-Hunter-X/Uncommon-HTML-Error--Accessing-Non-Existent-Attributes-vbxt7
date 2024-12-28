@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a non-existent attribute on an element
+    // This will not throw an error in many browsers, but may lead to unexpected behavior.
+    let attributeValue = document.getElementById("myDiv").nonExistentAttribute;
+    console.log(attributeValue); // Output: undefined
+    // To solve this: always check if the attribute exists before accessing it, and avoid accessing non existent attributes.
+  </script>
+</body>
+</html>
